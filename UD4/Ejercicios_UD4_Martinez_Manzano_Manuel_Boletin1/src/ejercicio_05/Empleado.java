@@ -1,6 +1,6 @@
 package ejercicio_05;
 
-public class Empleado {
+public abstract class Empleado {
     private String nombre;
     private String apellidos;
     protected double sueldoBase;
@@ -13,9 +13,7 @@ public class Empleado {
         this.nEmpleado = nEmpleado;
     }
 
-    public double calcularSueldo() {
-        return sueldoBase;
-    }
+    public abstract double calcularSueldo();
 
     @Override
     public String toString() {
