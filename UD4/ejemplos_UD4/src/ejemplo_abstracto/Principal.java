@@ -7,6 +7,8 @@ public class Principal {
 
 		Circulo c1 = new Circulo (10);
 		
+		
+		
 	}
 
 }
