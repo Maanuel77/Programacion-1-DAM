@@ -1,10 +1,42 @@
 package ejercicio_05;
 
-public abstract class Empleado {
+public class Empleado {
     private String nombre;
     private String apellidos;
-    protected double sueldoBase;
-    private int nEmpleado;
+    private double sueldoBase;
+    public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellidos() {
+		return apellidos;
+	}
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
+	public double getSueldoBase() {
+		return sueldoBase;
+	}
+
+	public void setSueldoBase(double sueldoBase) {
+		this.sueldoBase = sueldoBase;
+	}
+
+	public int getnEmpleado() {
+		return nEmpleado;
+	}
+
+	public void setnEmpleado(int nEmpleado) {
+		this.nEmpleado = nEmpleado;
+	}
+
+	private int nEmpleado;
 
     public Empleado(String nombre, String apellidos, double sueldoBase, int nEmpleado) {
         this.nombre = nombre;
@@ -13,7 +45,9 @@ public abstract class Empleado {
         this.nEmpleado = nEmpleado;
     }
 
-    public abstract double calcularSueldo();
+    public double calcularSueldo() {
+        return sueldoBase;
+    }
 
     @Override
     public String toString() {

@@ -10,6 +10,6 @@ public class Gerente extends Empleado {
 
     @Override
     public double calcularSueldo() {
-        return sueldoBase * (1 - impuesto);
+        return super.getSueldoBase() * (1 - impuesto);
     }
 }

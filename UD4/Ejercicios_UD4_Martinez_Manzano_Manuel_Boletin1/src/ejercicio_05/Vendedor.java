@@ -2,7 +2,7 @@ package ejercicio_05;
 
 public class Vendedor extends Empleado {
     private double ventas;
-    private double incentivo; // Ejemplo: 0.10 para un 10%
+    private double incentivo;
 
     public Vendedor(String nombre, String apellidos, double sueldoBase, int nEmpleado, double incentivo) {
         super(nombre, apellidos, sueldoBase, nEmpleado);
@@ -20,6 +20,6 @@ public class Vendedor extends Empleado {
 
     @Override
     public double calcularSueldo() {
-        return sueldoBase + (ventas * incentivo);
+        return super.getSueldoBase() + (ventas * incentivo);
     }
 }
