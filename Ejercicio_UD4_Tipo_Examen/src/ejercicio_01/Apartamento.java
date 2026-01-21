@@ -19,9 +19,9 @@ public class Apartamento extends Habitacion {
         return total;
     }
 
-    @Override
-    public String toString() {
-        return "[APARTAMENTO] " + super.toString() + 
-               " | Limpieza contratada: " + (servicioLimpieza ? "Sí (+50€)" : "No");
-    }
+	@Override
+	public String toString() {
+		return "Apartamento [servicioLimpieza=" + servicioLimpieza + ", PRECIO_LIMPIEZA=" + PRECIO_LIMPIEZA + "]";
+	}
+
 }

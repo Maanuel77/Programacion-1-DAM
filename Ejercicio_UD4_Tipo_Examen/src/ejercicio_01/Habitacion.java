@@ -49,9 +49,7 @@ public class Habitacion {
 			this.nombreCliente = nombreCliente;
 		}
 
-		public double calcularPrecio(double porcentajeDescuento) {
-	        return precioBase * diasOcupacion;
-	    }
+		
 
 	    public boolean isOcupada() {
 	        return ocupada;
@@ -60,7 +58,9 @@ public class Habitacion {
 	    public String getNombreCliente() {
 	        return nombreCliente;
 	    }
-
+	    public double calcularPrecio(double porcentajeDescuento) {
+	        return precioBase * diasOcupacion;
+	    }
 		@Override
 		public String toString() {
 			return "Habitacion [precioBase=" + precioBase + ", ocupada=" + ocupada + ", nombreCliente=" + nombreCliente
