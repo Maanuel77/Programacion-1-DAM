@@ -12,6 +12,12 @@ public class Producto {
 		this.precio = precio;
 		this.disponibilidad = disponibilidad;
 	}
+
+	@Override
+	public String toString() {
+		return "Producto [nombre=" + nombre + ", precio=" + precio + ", disponibilidad=" + disponibilidad + "]";
+	}
+	
 	
 	
 	

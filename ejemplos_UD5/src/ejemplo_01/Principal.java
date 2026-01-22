@@ -13,10 +13,14 @@ public class Principal {
 		
 		
 		//Creamos un producto
-		Producto p1 = new Producto ("Lechiga", 1.50, true);
+		Producto p1 = new Producto ("Lechuga", 1.50, true);
 		listaProductos.add(p1);
-		listaProductos.size();
 		System.out.println(listaProductos);
+		Producto p2 = new Producto ("Pepino", 1.50, true);
+		listaProductos.add(p2);
+		listaProductos.remove(0);
+		System.out.println(listaProductos);
+		
 	}
 
 }
