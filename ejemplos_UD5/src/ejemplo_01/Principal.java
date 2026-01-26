@@ -19,6 +19,8 @@ public class Principal {
 		Producto p2 = new Producto ("Pepino", 1.50, true);
 		listaProductos.add(p2);
 		listaProductos.remove(0);
+		Producto p3 = new Producto ("Pepino", 1.50, true);
+		listaProductos.add(p3);
 		System.out.println(listaProductos);
 		
 	}
