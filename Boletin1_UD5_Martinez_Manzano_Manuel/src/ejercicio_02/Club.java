@@ -26,9 +26,14 @@ public class Club {
 	public void setLista_Socios(ArrayList<Socio> lista_Socios) {
 		this.lista_Socios = lista_Socios;
 	}
-
+	//NO SE LE PASAN LOS ATRIBUTOS SUELTOS A AGREGAR
 	public void agregarSocio(Socio s) {
 		lista_Socios.add(s);
+	}
+	//SEGUNDA VERSION PARA AGREGAR SOCIOS
+	public boolean agregarSocioV2(Socio s) {
+	
+		return lista_Socios.add(s);
 	}
 
 	public Socio buscarSocio(String id) {
@@ -43,13 +48,13 @@ public class Club {
 		return null;
 	}
 
-	public void borrarSocio(String id) {
+	public boolean borrarSocio(String id) {
 		Socio s = buscarSocio(id);
 		if (s != null) {
 			lista_Socios.remove(s);
-			System.out.println("Socio borrado correctamente.");
+			return true;
 		} else {
-			System.out.println("No se puede borrar: El socio no existe.");
+			return false;
 		}
 	}
 	public void mostrarTodos() {
@@ -57,4 +62,11 @@ public class Club {
 			System.out.println(lista_Socios.get(i).toString());
 		}
 	}
+	public void mostrarTodosV2() {
+		for (Socio s : lista_Socios) {
+			System.out.println(s);
+		}
+		
+	}
+	
 }

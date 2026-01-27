@@ -97,7 +97,16 @@ public class Principal {
 		System.out.print("Introduce el ID del socio a borrar: ");
 		String idBorrar = Leer.dato();
 		
-		miClub.borrarSocio(idBorrar);
+		if (miClub.borrarSocio(idBorrar)) {
+			
+			System.out.println("Socio borrado correctamente de la base de datos.");
+			
+		} else {
+			
+			System.out.println("Socio no encontrado.");
+			
+		}
+			
 		
 		System.out.println("\n-- LISTA FINAL --");
 		miClub.mostrarTodos();
