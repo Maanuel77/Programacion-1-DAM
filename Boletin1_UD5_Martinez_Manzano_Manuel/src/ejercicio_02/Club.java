@@ -68,5 +68,19 @@ public class Club {
 		}
 		
 	}
+	public void añadir_Descuento_Antiguedad () {
+		
+		int limite = 20;
+		double porc_Desc = 0.5;
+		
+		for (Socio s : lista_Socios) {
+			
+			if (s.getAntiguedad() > limite) {
+				
+				s.setCuota_Base(s.getCuota_Base()*porc_Desc);
+			}
+			
+		}
+	}
 	
 }

@@ -93,7 +93,7 @@ public class Socio {
 		this.cuota_Base = cuota_Base;
 	}
 
-
+	
 
 	public int getAntiguedad() {
 		return antiguedad;
