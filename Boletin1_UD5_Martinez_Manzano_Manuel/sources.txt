@@ -1,0 +1,7 @@
+C:\Users\Alumno\Desktop\eclipse-workspace-fix\Boletin1_UD5_Martinez_Manzano_Manuel\src\module-info.java
+C:\Users\Alumno\Desktop\eclipse-workspace-fix\Boletin1_UD5_Martinez_Manzano_Manuel\src\ejercicio_01\Nota.java
+C:\Users\Alumno\Desktop\eclipse-workspace-fix\Boletin1_UD5_Martinez_Manzano_Manuel\src\ejercicio_01\Principal.java
+C:\Users\Alumno\Desktop\eclipse-workspace-fix\Boletin1_UD5_Martinez_Manzano_Manuel\src\ejercicio_02\Club.java
+C:\Users\Alumno\Desktop\eclipse-workspace-fix\Boletin1_UD5_Martinez_Manzano_Manuel\src\ejercicio_02\Principal.java
+C:\Users\Alumno\Desktop\eclipse-workspace-fix\Boletin1_UD5_Martinez_Manzano_Manuel\src\ejercicio_02\Socio.java
+C:\Users\Alumno\Desktop\eclipse-workspace-fix\Boletin1_UD5_Martinez_Manzano_Manuel\src\utilidades\Leer.java

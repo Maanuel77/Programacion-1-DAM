@@ -6,13 +6,11 @@ import java.util.ArrayList;
 public class Principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		
-		List <Producto> listaProductos = new ArrayList <Producto> ();
+		List <Producto> listaProductos = new ArrayList <> ();
 		
 		
-		//Creamos un producto
+		//creation of a product
 		Producto p1 = new Producto ("Lechuga", 1.50, true);
 		listaProductos.add(p1);
 		System.out.println(listaProductos);
@@ -22,6 +20,8 @@ public class Principal {
 		Producto p3 = new Producto ("Pepino", 1.50, true);
 		listaProductos.add(p3);
 		System.out.println(listaProductos);
+		
+		
 		
 	}
 

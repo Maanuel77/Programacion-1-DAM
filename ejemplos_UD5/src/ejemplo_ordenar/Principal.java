@@ -17,7 +17,9 @@ public class Principal {
 		corredores.add(new Corredor(1, "1:40", "Rafa Villar"));
 		corredores.add(new Corredor(8, "1:09", "Ángel Naranjo"));
 		corredores.add(new Corredor(2, "1:01", "Manuel Martínez"));
-
+		corredores.add(new Corredor(6, "1:15", "Gonzalo Martínez"));
+		
+				
 		System.out.println("\n\t\t ---CORREDORES---");
 
 		for (Corredor c : corredores) {

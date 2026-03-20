@@ -14,6 +14,12 @@ public class Alumno {
 		this.nota_Media = nota_Media;
 		
 	}
+	public Alumno(String DNI) {
+		super();
+		this.DNI = DNI;
+		this.nombre = null;
+		this.nota_Media = 0.0;
+	}
 	public String getNombre() {
 		return nombre;
 	}
@@ -32,6 +38,7 @@ public class Alumno {
 	public void setNota_Media(double nota_Media) {
 		this.nota_Media = nota_Media;
 	}
+	
 	@Override
 	public String toString() {
 		return "Alumno [nombre=" + nombre + ", DNI=" + DNI + ", nota_Media=" + nota_Media + "]";
