@@ -32,12 +32,13 @@ public class Principal {
 		System.out.println("\n--- 3. COMPARACIÓN DE FECHAS ---");
 		// Comprobar si una fecha es anterior o posterior a otra
 		if (hoy.isAfter(fechaCaducidad)) {
-			System.out.println("El producto está caducado (hoy es después de la fecha de caducidad).");
+			System.out.println("El producto está caducado.");
 		} else {
 			System.out.println("El producto está en buen estado.");
 		}
 
-		System.out.println("¿La fecha de caducidad es anterior a hoy? " + fechaCaducidad.isBefore(hoy));
+		System.out.println("¿La fecha de caducidad es anterior a hoy? "
+		+ fechaCaducidad.isBefore(hoy));
 
 		System.out.println("\n--- 4. AÑOS BISIESTOS ---");
 		// Comprobar si un año es bisiesto

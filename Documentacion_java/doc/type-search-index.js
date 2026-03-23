@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"ejercicio_Sesion3","l":"DiscountCalculator"},{"p":"ejercicio_Sesion3","l":"Principal"},{"p":"ejercicio_Sesion3","l":"RectangleArea"}];updateSearchResults();
