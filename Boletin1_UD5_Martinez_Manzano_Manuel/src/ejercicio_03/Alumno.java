@@ -2,7 +2,7 @@ package ejercicio_03;
 
 import java.util.Objects;
 
-public class Alumno {
+public class Alumno{
     private String dni;
     private String nombre;
     private double nota;
@@ -37,6 +37,15 @@ public class Alumno {
         this.nota = nota;
     }
 
+    public int compareTo (Alumno alumno) {
+    	
+    	if (this.nombre.equals(alumno.getNombre())) {
+    		
+    		return 1;
+    	}
+    	return 0;
+    }
+    
     @Override
     public int hashCode() {
         return Objects.hash(dni);

@@ -12,10 +12,10 @@ public class Principal {
         GestionClase miClase = new GestionClase("1º DAM / DAW");
         
         // Añadimos un par de alumnos iniciales para tener datos de prueba
-        miClase.agregar_Alumno(new Alumno("111A", "Juan Pérez", 6.5));
-        miClase.agregar_Alumno(new Alumno("222B", "Ana Gómez", 3.2));
+        miClase.agregar_Alumno(new Alumno("111A", "Juan Chulo", 6.5));
+        miClase.agregar_Alumno(new Alumno("222B", "Ana Triste", 3.2));
         miClase.agregar_Alumno(new Alumno("333C", "Luis Explotado", 4.0));
-        miClase.agregar_Alumno(new Alumno("444D", "María Sobresaliente", 9.5));
+        miClase.agregar_Alumno(new Alumno("444D", "María Repelente", 9.5));
 
         System.out.println("Bienvenido al gestor de la clase :)");
 

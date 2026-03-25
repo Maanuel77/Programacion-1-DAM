@@ -4,19 +4,28 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class GestionClase {
-    private String nombre_Curso;
     private Set<Alumno> conjunto_Alumnos;
 
     public GestionClase(String nombre_Curso) {
-        this.nombre_Curso = nombre_Curso;
         this.conjunto_Alumnos = new HashSet<>();
     }
 
-    // Agregar un alumno al Set
+    // Agregar un alumno al Set, no se pasan atributos sueltos
     public boolean agregar_Alumno(Alumno a) {
         return conjunto_Alumnos.add(a);
     }
 
+    // Actualizar un alumno por DNI
+    public boolean actualizar_Alumno(String dni, String nuevo_Nombre, double nueva_Nota) {
+		Alumno a_Actualizar = buscar_Alumno(dni);
+		if (a_Actualizar != null) {
+			a_Actualizar.setNombre(nuevo_Nombre);
+			a_Actualizar.setNota(nueva_Nota);
+			return true;
+		}
+		return false;
+	}
+    
     // Buscar y devolver un alumno por DNI
     public Alumno buscar_Alumno(String dni) {
         for (Alumno a : conjunto_Alumnos) {
@@ -47,6 +56,7 @@ public class GestionClase {
         return suma / conjunto_Alumnos.size();
     }
 
+    
     // Obtener total de alumnos suspensos
     public int get_Total_Suspensos() {
         int contador = 0;

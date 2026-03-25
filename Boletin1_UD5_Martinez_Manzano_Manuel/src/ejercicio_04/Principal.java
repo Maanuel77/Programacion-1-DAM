@@ -3,7 +3,7 @@ package ejercicio_04;
 public class Principal {
 
 	public static void main(String[] args) {
-		
+		  
 	        Agenda miAgenda = new Agenda();
 
 	        Contacto c1 = new Contacto("Marta");
@@ -24,7 +24,7 @@ public class Principal {
 	        // 3. Buscar
 	        String nombreBuscar = "Pedro";
 	        String telefonoEncontrado = miAgenda.buscarPorNombre(nombreBuscar);
-	        if (telefonoEncontrado != null) {
+	        if (telefonoEncontrado != null) { 
 	            System.out.println("Búsqueda: El teléfono de " + nombreBuscar + " es " + telefonoEncontrado);
 	        } else {
 	            System.out.println("Búsqueda: No se encontró a " + nombreBuscar);
