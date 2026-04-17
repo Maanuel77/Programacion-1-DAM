@@ -5,9 +5,9 @@ import utilidades.Leer;
 public class Principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		int num1, num2, opcion;
+		int num1;
+		int num2;
+		int opcion;
 		double result;
 
 		do {
@@ -24,46 +24,46 @@ public class Principal {
 			case 1:
 
 				try {
-					System.out.println("Diga un número");
+					System.out.println("Diga un n?omero");
 					num1 = Leer.datoInt();
-					System.out.println("Diga otro número");
+					System.out.println("Diga otro n?omero");
 					num2 = Leer.datoInt();
 
 					result = num1 + num2;
 					System.out.println("El resultado es: "+ result);
 				} catch (NumberFormatException nf) {
 
-					System.out.println("Formato no válido");
+					System.out.println("Formato no v??lido");
 				}
 				break;
 
 			case 2:
 				try {
-					System.out.println("Diga un número");
+					System.out.println("Diga un n?omero");
 					num1 = Leer.datoInt();
-					System.out.println("Diga otro número");
+					System.out.println("Diga otro n?omero");
 					num2 = Leer.datoInt();
 
 					result = num1 - num2;
 					System.out.println("El resultado es: "+ result);
 				} catch (NumberFormatException nf) {
 
-					System.out.println("Formato no válido");
+					System.out.println("Formato no v??lido");
 				}
 				break;
 
 			case 3:
 				try {
-					System.out.println("Diga un número");
+					System.out.println("Diga un n?omero");
 					num1 = Leer.datoInt();
-					System.out.println("Diga otro número");
+					System.out.println("Diga otro n?omero");
 					num2 = Leer.datoInt();
 
 					result = num1 / num2;
 					System.out.println("El resultado es: "+ result);
 				} catch (NumberFormatException nf) {
 
-					System.out.println("Formato no válido");
+					System.out.println("Formato no v??lido");
 				} catch (ArithmeticException ae) {
 
 					System.out.println("No es posible dividir por cero");
@@ -73,32 +73,35 @@ public class Principal {
 
 			case 4:
 				try {
-					System.out.println("Diga un número");
+					System.out.println("Diga un n?omero");
 					num1 = Leer.datoInt();
-					System.out.println("Diga otro número");
+					System.out.println("Diga otro n?omero");
 					num2 = Leer.datoInt();
 
 					result = num1 * num2;
 					System.out.println("El resultado es: "+ result);
 				} catch (NumberFormatException nf) {
 
-					System.out.println("Formato no válido");
+					System.out.println("Formato no v??lido");
 				}
 				break;
 
 			case 5:
 				try {
-					System.out.println("Diga un número");
+					System.out.println("Diga un n?omero");
 					num1 = Leer.datoInt();
+					if (num1 < 0) {
+						throw new ArithmeticException();
+					}
 
 					result = Math.sqrt(num1);
 					System.out.println("El resultado es: "+ result);
 				} catch (NumberFormatException nf) {
 
-					System.out.println("Formato no válido");
+					System.out.println("Formato no v??lido");
 				} catch (ArithmeticException ae) {
 
-					System.out.println("No es posible dividir por cero");
+					System.out.println("No se puede hacer la ra??z cuadrada de un n?omero negativo");
 
 				}
 				break;
@@ -110,7 +113,7 @@ public class Principal {
 
 			default:
 
-				System.out.println("Opcion no válida");
+				System.out.println("Opcion no v??lida");
 
 			}
 
@@ -119,3 +122,5 @@ public class Principal {
 	}
 
 }
+
+
