@@ -2,7 +2,7 @@ package modelo_vista_controlador;
 
 public class Producto {
 
-    private Long id; 
+    private Long id_Producto; 
     private String nombre;
     private String marca;
     private Double precio;
@@ -14,11 +14,11 @@ public class Producto {
     }
 
     public Long getId() {
-        return id;
+        return id_Producto;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.id_Producto = id;
     }
 
 	public String getNombre() {

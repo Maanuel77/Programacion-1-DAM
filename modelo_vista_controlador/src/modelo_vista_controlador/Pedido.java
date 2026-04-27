@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Pedido {
 
-    private Long id;
+    private Long id_Pedido;
     private String codigo;
     private LocalDate fecha;
     private Double total;
@@ -13,11 +13,11 @@ public class Pedido {
     }
 
     public Long getId() {
-        return id;
+        return id_Pedido;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.id_Pedido = id;
     }
 
 	public String getCodigo() {
